@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Main-weather-dashbord</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="weather.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <img src="icons/big_icon.png"  alt="ma photo">
+            <h1>Weather Today</h1>
+        </header>
+        <main>
+            <section>
+            <form id="frm" mythod="get" action="">
+                <label for="Region">Select</label>
+                <select name="Region" id="Region">
+                </select>
+                
+            </form>
+            </section>
+
+            <section class="moumouh">
+                <div class="location">
+                    <img src="icons/location_icon.png" alt="location icon">
+                    <div class="locationALL">
+                    <p class="locationplus">Location, ville</p> 
+                    <div class="locationText"></div> 
+                    </div>                  
+                </div>
+                <div class="temperature">
+                    <img src="icons/temperature_icon.png" alt="temperature icon">
+                    <div class="temperatureALL">
+                     <p class= "temperatureplus">Temperature</p>
+                     <div class="temperatureText"></div>    
+                    </div>                   
+                    </div>
+                    
+                
+                <div class="wind">
+                    <img src="icons/wind_icon.png" alt="wind icon">
+                    <div class="windALL">
+                    <p class="windplus">Wind speed</p>
+                    <div class="windText"></div>
+                    </div>                   
+                </div>
+                <div class="coordination">
+                    <img src="icons/coordinations_icon.png" alt="coordination icon">
+                   <div class="coordinationALL">
+                     <p class="coordinationplus">Zone</p>
+                     <div class="coordinationText"></div>
+                     </div>
+                    </div>
+            </section>
+
+        </main>
+    </body>
+</html>
