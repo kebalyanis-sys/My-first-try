@@ -1,8 +1,8 @@
 async function getUrlEndpoint() {
-    const response = await fetch("http://localhost:3000/villes");
-    const action = await response.json();
+   const response = await fetch("./db.json");
+const data = await response.json();
 
-    afficherVilles (action);
+afficherVilles(data.villes);
 }
    const cetiesSelect= document.getElementById("Region");
  function afficherVilles (villes) {
@@ -21,7 +21,7 @@ async function getUrlEndpoint() {
     }
 
     cetiesSelect.addEventListener("change", async function(event) {
-      const selectionChanges = villes.find(v => v.id === event.target.value);
+      const selectionChanges = villes.find(number(v => v.id === event.target.value));
       
       getWeatherData(selectionChanges)   
    });
