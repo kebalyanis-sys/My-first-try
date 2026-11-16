@@ -7,7 +7,7 @@ async function getUrlEndpoint() {
    const cetiesSelect= document.getElementById("Region");
  function afficherVilles (villes) {
    
-    // 2. Then run your loop for the rest of the cities from the database
+    //Get the data out of the list
     for (let i = 0; i < villes.length; i++) {
         const article = villes[i];
         const option = document.createElement("option");
